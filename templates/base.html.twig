@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{% block title %}omi yami {% endblock %}</title>
+			{% block stylesheet %} 
+		        <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+				<link rel="stylesheet" href="{{asset('plugins/bootstrap/bootstrap.min.css')}}">
+				<link rel="stylesheet" href="{{asset('plugins/themify/css/themify-icons.css')}}">
+				<link rel="stylesheet" href="{{asset('plugins/icofont/icofont.min.css')}}">
+				<link rel="stylesheet" href="{{asset('plugins/fontawesome/css/all.css')}}">
+			    <link rel="stylesheet" href="{{asset('plugins/aos/aos.css')}}">
+				<link rel="stylesheet" href="{{asset('plugins/magnific-popup/magnific-popup.css')}}">
+				<link rel="stylesheet" href="{{asset('plugins/video-popup/modal-video.min.css')}}">
+		        <link rel="stylesheet" href="{{asset('plugins/swiper/swiper.min.css')}}">
+				<link rel="stylesheet" href="{{asset('plugins/date-picker/datepicker.min.css')}}">
+				<link rel="stylesheet" href="{{asset('plugins/clock-picker/clockpicker.min.css')}}">
+				<link rel="stylesheet" href="{{asset('plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.css')}}">
+				<link rel="stylesheet" href="{{asset('plugins/devices.min.css')}}">
+				<link rel="shortcut icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
+				<link rel="icon" href="{{asset('images/favicon.png"')}}" type="image/x-icon">
+        
+		{% endblock %}
+	</head>
+	<body>
+
+        {% block body %}
+        	<div class="preloader">
+		<img src="{{asset('images/preloader.gif')}}" alt="preloader" class="img-fluid">
+	  </div>
+
+
+		<header class="navigation ">
+	<nav class="navbar navbar-expand-lg main-nav py-lg-3 position-absolute w-100" id="main-nav">
+		<div class="container">
+			<a class="navbar-brand" href="{{path('layout')}}">
+				<img src="{{asset('images/Untitled-8.png')}}" alt="" class="img-fluid">
+			</a>
+
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation"
+				aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navigation">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="{{path('layout')}}">Home</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="{{path('about')}}">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="{{path('recipes')}}">Recipes</a></li>
+					
+					<span class="login">
+            <a  href="{{path('login')}}" data-hj-masked="" class="nav-link" data-analytics-location="nav" data-analytics="top-nav-login">Login</a>
+            
+          </span>
+
+
+          	<span class="logout">
+            <a  href="{{path('layout')}}" data-hj-masked="" class="nav-link" data-analytics-location="nav" data-analytics="top-nav-login">Logout</a>
+            
+          </span>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+{% block footer %}
+	<div class="container-fluid p-0">
+	<div class="row no-gutters">
+	 
+
+	  <div class="swiper-container" id="gallery-slider">
+	
+
+		<div class="swiper-wrapper" id="instafeed">
+		  
+		  <div class="swiper-slide">
+			<a class="popup-gallery" href="{{asset('images/gallery/gallery-4.jpg')}}">
+			  <img src="{{asset('images/gallery/gallery-4.jpg')}}" alt="" class="img-fluid">
+			</a>
+		  </div>
+		  <div class="swiper-slide">
+			<a class="popup-gallery" href="{{asset('images/gallery/gallery-3.jpg')}}">
+			  <img src="{{asset('images/gallery/gallery-3.jpg')}}" alt="" class="img-fluid">
+			</a>
+		  </div>
+		  <div class="swiper-slide">
+			<a class="popup-gallery" href="{{asset('images/gallery/gallery-5.jpg')}}">
+			  <img src="{{asset('images/gallery/gallery-5.jpg')}}" alt="" class="img-fluid">
+			</a>
+		  </div>
+		  <div class="swiper-slide">
+			<a class="popup-gallery" href="{{asset('images/gallery/gallery-7.jpg')}}">
+			  <img src="{{asset('images/gallery/gallery-7.jpg')}}" alt="" class="img-fluid">
+			</a>
+		  </div>
+		  <div class="swiper-slide">
+			<a class="popup-gallery" href="{{asset('images/gallery/gallery-1.jpg')}}">
+			  <img src="{{asset('images/gallery/gallery-1.jpg')}}" alt="" class="img-fluid">
+			</a>
+		  </div>
+		  <div class="swiper-slide ">
+			<a class="popup-gallery" href="{{asset('images/gallery/gallery-2.jpg')}}">
+			  <img src="{{asset('images/gallery/gallery-2.jpg')}}" alt="" class="img-fluid">
+			</a>
+		  </div>
+		  <div class="swiper-slide">
+			<a class="popup-gallery" href="{{asset('images/gallery/gallery-3.jpg')}}">
+			  <img src="{{asset('images/gallery/gallery-3.jpg')}}" alt="" class="img-fluid">
+			</a>
+		  </div>
+		  <div class="swiper-slide">
+			<a class="popup-gallery" href="{{asset('images/gallery/gallery-4.jpg')}}">
+			  <img src="{{asset('images/gallery/gallery-4.jpg')}}" alt="" class="img-fluid">
+			</a>
+		  </div>
+		  <div class="swiper-slide">
+			<a class="popup-gallery" href="{{asset('images/gallery/gallery-5.jpg')}}">
+			  <img src="{{asset('images/gallery/gallery-5.jpg')}}" alt="" class="img-fluid">
+			</a>
+		  </div>
+		</div>
+	 
+	  </div>
+	</div>
+  </div>
+
+<footer class="section footer">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-3 mb-5 mb-lg-0">
+                  <div class="widget">
+                      <h4 class="mb-3">About</h4>
+                      <p>We are Omi Yammi Restaurant follow on:</p>
+  
+                      <ul class="list-inline footer-socials mt-4">
+                          <li class="list-inline-item"><a href="https://www.facebook.com"><i
+                                      class="ti-facebook mr-2"></i></a></li>
+                          <li class="list-inline-item"><a href="https://twitter.com"><i class="ti-twitter mr-2 "></i></a>
+                          </li>
+                          <li class="list-inline-item"><a href="https://instagram.com"><i class="ti-instagram mr-2 "></i></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+  
+              <div class="col-lg-4 ml-auto col-md-5 mb-5 mb-lg-0">
+                  <div class="widget">
+                      <h4 class="mb-3">Contact Info</h4>
+  
+                      <ul class="list-unstyled mb-0 footer-contact">
+                          <li><i class="ti-mobile"></i>+21624319***</li>
+                          <li><i class="ti-email"></i>omiyammi@support.com</li>
+                          <li><i class="ti-map"></i>Sahloul Sousse 10027-0000</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                  <div class="widget">
+                      <h4 class="mb-3">Opening Hours</h4>
+                      <ul class="list-unstyled open-hours">
+                        <li class="d-flex"><span>Monday</span> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <span>9:00 - 00:00</span></li>
+
+                        <li class="d-flex"><span>Tuesday</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <span>9:00 - 00:00</span></li>
+
+                        <li class="d-flex"><span>Wednesday</span> &nbsp;&nbsp;
+                          <span>9:00 - 00:00</span></li>
+
+                        <li class="d-flex"><span>Thursday</span> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                          <span>9:00 - 00:00</span></li>
+
+                        <li class="d-flex"><span>Friday</span>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                          <span>9:00 - 02:00</span></li>
+
+                        <li class="d-flex"><span>Saturday</span>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                          <span>9:00 - 02:00</span></li>
+
+                        <li class="d-flex"><span>Sunday</span> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                          <span> 10:00 - 23:00</span></li>
+                      </ul>
+                     
+                  </div>
+              </div>
+          </div>
+  
+          <div class="row justify-content-center mt-5">
+              <div class="col-lg-6 text-center">
+                  <h4 class="text-white-50 mb-3">Get latest food recipe at your inbox</h4>
+                  <form action="#" class="footer-newsletter">
+                      <div class="form-group">
+                          <button class="button"><span class="ti-email"></span></button>
+                          <input type="email" class="form-control" placeholder="Enter Email">
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+
+
+{% endblock %}
+	
+		
+<script src="{{asset('plugins/jQuery/jquery.min.js')}}"></script>
+
+<script src="{{asset('plugins/bootstrap/bootstrap.min.js')}}"></script>
+<script src="{{asset('plugins/aos/aos.js')}}"></script>
+<script src="{{asset('plugins/shuffle/shuffle.min.js')}}"></script>
+<script src="{{asset('plugins/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('plugins/date-picker/datepicker.min.js')}}"></script>
+<script src="{{asset('plugins/clock-picker/clockpicker.min.js')}}"></script>
+<script src="{{asset('plugins/video-popup/jquery-modal-video.min.js')}}"></script>
+<script src="{{asset('plugins/swiper/swiper.min.js')}}"></script>
+<script src="{{asset('plugins/instafeed/instafeed.min.js')}}"></script>
+<script src="{{asset('plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.js')}}"></script>
+
+ 
+<script src="{{asset('js/script.js')}}"></script>
+
+
+	</body>
+</html>

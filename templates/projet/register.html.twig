@@ -1,0 +1,87 @@
+
+
+
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}omi yami {% endblock %}</title>
+            {% block stylesheet %} 
+                <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+                <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+                <link rel="stylesheet" href="{{asset('plugins/bootstrap/bootstrap.min.css')}}">
+                <link rel="stylesheet" href="{{asset('plugins/themify/css/themify-icons.css')}}">
+                <link rel="stylesheet" href="{{asset('plugins/icofont/icofont.min.css')}}">
+                <link rel="stylesheet" href="{{asset('plugins/fontawesome/css/all.css')}}">
+                <link rel="stylesheet" href="{{asset('plugins/aos/aos.css')}}">
+                <link rel="stylesheet" href="{{asset('plugins/magnific-popup/magnific-popup.css')}}">
+                <link rel="stylesheet" href="{{asset('plugins/video-popup/modal-video.min.css')}}">
+                <link rel="stylesheet" href="{{asset('plugins/swiper/swiper.min.css')}}">
+                <link rel="stylesheet" href="{{asset('plugins/date-picker/datepicker.min.css')}}">
+                <link rel="stylesheet" href="{{asset('plugins/clock-picker/clockpicker.min.css')}}">
+                <link rel="stylesheet" href="{{asset('plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.css')}}">
+                <link rel="stylesheet" href="{{asset('plugins/devices.min.css')}}">
+                <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
+                <link rel="icon" href="{{asset('images/favicon.png"')}}" type="image/x-icon">
+        
+        {% endblock %}
+    </head>
+    <body>
+
+        {% block body %}
+            
+
+
+
+
+
+
+ 
+
+
+<section class="well">
+	<div class="container">
+				<h1 class="text-primary font-extra font-md ">Register now</h1>
+				<h2 class="text-primary font-extra font-md">{{form_start(form)}}</h2>
+				<h2 class="text-primary font-extra font-md">{{form_row(form.username)}}</h2>
+				<h2 class="text-primary font-extra font-md">{{form_row(form.email)}}</h2>
+				<h2 class="text-primary font-extra font-md">{{form_row(form.plainPassword.first)}}</h2>
+				<h2 class="text-primary font-extra font-md">{{form_row(form.plainPassword.second)}}</h2>
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+				{{form_end(form)}}
+				<div class="checkbox mb-3">
+            <label>
+               <a  href="{{path('login')}}" class="nav-link" >Back to login</a>
+            </label>
+        </div>
+			</div>
+
+	</section>
+        
+
+
+
+{% endblock %}
+
+
+        
+<script src="{{asset('plugins/jQuery/jquery.min.js')}}"></script>
+
+<script src="{{asset('plugins/bootstrap/bootstrap.min.js')}}"></script>
+<script src="{{asset('plugins/aos/aos.js')}}"></script>
+<script src="{{asset('plugins/shuffle/shuffle.min.js')}}"></script>
+<script src="{{asset('plugins/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('plugins/date-picker/datepicker.min.js')}}"></script>
+<script src="{{asset('plugins/clock-picker/clockpicker.min.js')}}"></script>
+<script src="{{asset('plugins/video-popup/jquery-modal-video.min.js')}}"></script>
+<script src="{{asset('plugins/swiper/swiper.min.js')}}"></script>
+<script src="{{asset('plugins/instafeed/instafeed.min.js')}}"></script>
+<script src="{{asset('plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.js')}}"></script>
+
+ 
+<script src="{{asset('js/script.js')}}"></script>
+
+
+    </body>
+</html>

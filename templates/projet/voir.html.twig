@@ -1,0 +1,66 @@
+{% extends "base.html.twig" %}
+{% block title %}
+	{{parent()}} -Voir 
+{% endblock %}
+
+{% block stylesheet %}
+{{parent()}} 
+ {% endblock %}
+
+{% block titre %}
+
+{% endblock %}
+
+{% block body %}
+	{{parent()}} 
+	
+<section class="section-header bg-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <h1 class="text-capitalize mb-4 font-lg text-white">Reservation</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section menu">
+	<div class="container">
+		<div class="row  justify-content-center mb-5">
+			<div class="col-lg-8 text-center">
+				{% for message in app.flashes('notice') %}
+					<div class="text-primary font-extra font-md">{{message}}</div>
+				{% endfor %}
+				<span class="text-primary font-extra font-md">Détails du reservation ayant l'id: {{reservation.id}}</span>
+				<h2 class="mt-3 mb-4 text-primary font-extra font-md">Merci MR/Madame {{reservation.nom}} {{reservation.prenom}} ayant l'email {{reservation.email}} et le numero de téléphone {{reservation.phone}} pour votre reservation</h2>
+		
+			</div>
+
+		  </section>
+
+
+		  <section class="modif">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center mt-5">
+        
+
+				<a href="{{path('modifier',{'id':reservation.id})}}" class="btn btn-black ">Modification </a>
+			
+
+      </div>
+    </div>
+  </div>
+</section>
+
+		  
+
+{% endblock %}
+{% block photo %}
+	{{parent()}} 
+{% endblock %}
+	{% block footer %}
+		{{parent()}} 
+{% endblock %}
